@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Enter Code
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card class="codeCard">
+    <ion-item>
+      <ion-label position="floating">Enter 6-digit code</ion-label>
+      <ion-input [(ngModel)]="enteredCode" type="text"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="checkCode()">Submit</ion-button>
+  </ion-card>
+
+</ion-content>
